@@ -1,0 +1,10 @@
+{
+  "title": "Spanish I",
+  "description": "An ACTFL-aligned, Novice-level first-year Spanish course for ISD 197 high school students, covering identity, school life, family, and food through the Entreculturas curriculum with cultural comparisons across the Spanish-speaking world and local Minnesota communities.",
+  "creator": "Miles Lawson",
+  "date": "2026-08-31",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}
