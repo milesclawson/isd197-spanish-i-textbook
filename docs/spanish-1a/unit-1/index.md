@@ -64,7 +64,7 @@ Type: microsim
 
 **sim-id:** colors-numbers-matchup<br/>
 **Library:** p5.js<br/>
-**Status:** Specified
+**Status:** Built
 
 Purpose: Give 7th/8th grade students a low-pressure, game-like way to memorize colors and numbers 1-30 before those words show up in every later activity this year.
 
@@ -129,7 +129,7 @@ Type: microsim
 
 **sim-id:** ser-conjugation-practice<br/>
 **Library:** p5.js<br/>
-**Status:** Specified
+**Status:** Built
 
 Purpose: Give students repeated practice choosing the correct form of *ser* to match a subject, building the automatic recall they'll need for real conversation.
 
@@ -193,7 +193,7 @@ Type: microsim
 
 **sim-id:** vocabulary-flashcard-sprint<br/>
 **Library:** p5.js<br/>
-**Status:** Specified
+**Status:** Built
 
 Purpose: Quick daily-warm-up-style repetition of Unit 1 vocabulary (sports, music, classes, foods) across a timed round.
 

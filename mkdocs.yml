@@ -62,6 +62,17 @@ nav:
 
   - MicroSims:
       - List of MicroSims: sims/index.md
+      - Stress Pattern Detective: sims/stress-pattern-detective/index.md
+      - Question Word Explorer: sims/question-word-explorer/index.md
+      - Spanish Number Builder: sims/spanish-number-builder/index.md
+      - Time Teller Clock: sims/time-teller-clock/index.md
+      - Noun Gender Sorter: sims/noun-gender-sorter/index.md
+      - Chapter 1 Concept Map: sims/chapter-1-concept-map/index.md
+      - Colors and Numbers Match-Up: sims/colors-numbers-matchup/index.md
+      - Ser Conjugation Practice: sims/ser-conjugation-practice/index.md
+      - Vocabulary Flashcard Sprint: sims/vocabulary-flashcard-sprint/index.md
+      - "-Er and -Ir Verb Builder": sims/er-ir-verb-builder/index.md
+      - Weather and Season Explorer: sims/weather-season-explorer/index.md
 
   - Spanish 1A:
       - Course Description: spanish-1a/index.md

@@ -82,7 +82,7 @@ That last row is worth pausing on: **estás** ends in "s," so Rule 1 would norma
 
 #### Diagram: Stress Pattern Detective
 
-<iframe src="../../sims/stress-pattern-detective/main.html" width="100%" height="420px" scrolling="no"></iframe>
+<iframe src="../../sims/stress-pattern-detective/main.html" width="100%" height="375px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Stress Pattern Detective</summary>
@@ -90,7 +90,7 @@ Type: microsim
 
 **sim-id:** stress-pattern-detective<br/>
 **Library:** p5.js<br/>
-**Status:** Specified
+**Status:** Built
 
 Purpose: Give students hands-on practice applying the two stress rules (and recognizing when a written accent overrides them) before they meet the rules again in every vocabulary list for the rest of the book.
 
@@ -168,7 +168,7 @@ Most questions in Spanish, just like in English, start with a **question word**.
 
 #### Diagram: Question Word Explorer
 
-<iframe src="../../sims/question-word-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/question-word-explorer/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Question Word Explorer</summary>
@@ -176,7 +176,7 @@ Type: infographic
 
 **sim-id:** question-word-explorer<br/>
 **Library:** Custom (HTML/CSS/JavaScript)<br/>
-**Status:** Specified
+**Status:** Built
 
 Purpose: Help students connect each of the eight Spanish question words to its meaning and to a model question, through active exploration rather than passive list memorization.
 
@@ -233,7 +233,7 @@ The table below summarizes that compression-versus-separation pattern so you can
 
 #### Diagram: Spanish Number Builder
 
-<iframe src="../../sims/spanish-number-builder/main.html" width="100%" height="300px" scrolling="no"></iframe>
+<iframe src="../../sims/spanish-number-builder/main.html" width="100%" height="260px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Spanish Number Builder</summary>
@@ -241,7 +241,7 @@ Type: microsim
 
 **sim-id:** spanish-number-builder<br/>
 **Library:** p5.js<br/>
-**Status:** Specified
+**Status:** Built
 
 Purpose: Let students build any number from 0-100 and immediately see (and eventually hear) how it's rendered in Spanish, reinforcing the compression-vs-separation pattern from the prose above.
 
@@ -288,7 +288,7 @@ Telling time combines two things you've already learned in this chapter -- numbe
 
 #### Diagram: Time Teller Clock
 
-<iframe src="../../sims/time-teller-clock/main.html" width="100%" height="470px" scrolling="no"></iframe>
+<iframe src="../../sims/time-teller-clock/main.html" width="100%" height="460px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Time Teller Clock</summary>
@@ -296,7 +296,7 @@ Type: microsim
 
 **sim-id:** time-teller-clock<br/>
 **Library:** p5.js<br/>
-**Status:** Specified
+**Status:** Built
 
 Purpose: Let students manipulate an analog clock face and practice constructing the matching Spanish time phrase, reinforcing the y/menos/media/cuarto patterns from the prose above.
 
@@ -361,7 +361,7 @@ Making a noun plural follows its own pattern, based on how the word ends:
 
 #### Diagram: Noun Gender Sorter
 
-<iframe src="../../sims/noun-gender-sorter/main.html" width="100%" height="400px" scrolling="no"></iframe>
+<iframe src="../../sims/noun-gender-sorter/main.html" width="100%" height="350px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Noun Gender Sorter</summary>
@@ -369,7 +369,7 @@ Type: microsim
 
 **sim-id:** noun-gender-sorter<br/>
 **Library:** p5.js<br/>
-**Status:** Specified
+**Status:** Built
 
 Purpose: Give students repeated, low-stakes practice judging a noun's gender from its ending, including exposure to the common exceptions called out in the prose above.
 
@@ -410,7 +410,7 @@ The concept map below lets you explore those connections directly: click any con
 
 #### Diagram: Chapter 1 Concept Map
 
-<iframe src="../../sims/chapter-1-concept-map/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/chapter-1-concept-map/main.html" width="100%" height="640px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Chapter 1 Concept Map</summary>
@@ -418,7 +418,7 @@ Type: graph-data-model
 
 **sim-id:** chapter-1-concept-map<br/>
 **Library:** vis-network<br/>
-**Status:** Specified
+**Status:** Built
 
 Purpose: Let students examine, rather than just read, how this chapter's 18 concepts depend on and enable each other, previewing the same graph-based structure used by the full course learning graph.
 

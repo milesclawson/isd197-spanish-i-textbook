@@ -52,7 +52,7 @@ Notice that *-er* and *-ir* verbs share almost the same endings -- they only dif
 
 #### Diagram: -Er and -Ir Verb Builder
 
-<iframe src="../../sims/er-ir-verb-builder/main.html" width="100%" height="340px" scrolling="no"></iframe>
+<iframe src="../../sims/er-ir-verb-builder/main.html" width="100%" height="310px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>-Er and -Ir Verb Builder</summary>
@@ -60,7 +60,7 @@ Type: microsim
 
 **sim-id:** er-ir-verb-builder<br/>
 **Library:** p5.js<br/>
-**Status:** Specified
+**Status:** Built
 
 Purpose: Help students see the shared pattern between -er and -ir verb endings by building conjugations side by side, rather than memorizing two separate lists.
 
@@ -113,7 +113,7 @@ Weather is one of the most common things people talk about in any language, and 
 
 #### Diagram: Weather and Season Explorer
 
-<iframe src="../../sims/weather-season-explorer/main.html" width="100%" height="380px" scrolling="no"></iframe>
+<iframe src="../../sims/weather-season-explorer/main.html" width="100%" height="360px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Weather and Season Explorer</summary>
@@ -121,7 +121,7 @@ Type: infographic
 
 **sim-id:** weather-season-explorer<br/>
 **Library:** Custom (HTML/CSS/JavaScript)<br/>
-**Status:** Specified
+**Status:** Built
 
 Purpose: Connect weather expressions to the season they're most associated with, using an interactive visual rather than a flat vocabulary list.
 
