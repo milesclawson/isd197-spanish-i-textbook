@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<title>Question Word Explorer</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; background: aliceblue; }
+  #wrap { max-width: 900px; margin: 0 auto; padding: 16px; }
+  h1 { text-align: center; font-size: 22px; margin: 4px 0 14px; }
+  #wheel { position: relative; width: 100%; max-width: 520px; height: 400px; margin: 0 auto; }
+  .hub { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 70px; height: 70px; border-radius: 50%; background: #2F3C7E; color: white;
+    display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: bold; }
+  .spoke { position: absolute; width: 92px; height: 46px; border-radius: 8px; border: none;
+    color: white; font-size: 14px; font-weight: bold; cursor: pointer; }
+  .spoke:hover, .spoke:focus { outline: 3px solid #333; }
+  #panel { max-width: 520px; margin: 18px auto 0; min-height: 90px; background: white;
+    border: 1px solid #ccc; border-radius: 8px; padding: 14px 18px; }
+  #panel h2 { margin: 0 0 6px; font-size: 20px; }
+  #panel p { margin: 4px 0; font-size: 15px; }
+  #toggleRow { text-align: center; margin-top: 10px; }
+  button#showAll { padding: 8px 14px; font-size: 14px; cursor: pointer; }
+  #allList { max-width: 520px; margin: 14px auto 0; display: none; }
+  #allList table { width: 100%; border-collapse: collapse; }
+  #allList td { padding: 6px 8px; border-bottom: 1px solid #eee; font-size: 14px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>Question Word Explorer</h1>
+  <div id="wheel">
+    <div class="hub">¿?</div>
+  </div>
+  <div id="panel"><p style="color:#777">Click a question word to see its meaning and an example question.</p></div>
+  <div id="toggleRow"><button id="showAll">Show All Meanings</button></div>
+  <div id="allList">
+    <table id="allTable"></table>
+  </div>
+</div>
+<script>
+const words = [
+  { word: "qué", meaning: "what", example: "¿Qué hora es?", translation: "What time is it?" },
+  { word: "quién / quiénes", meaning: "who", example: "¿Quién es?", translation: "Who is it?" },
+  { word: "cuándo", meaning: "when", example: "¿Cuándo es la clase?", translation: "When is class?" },
+  { word: "dónde", meaning: "where", example: "¿Dónde vives?", translation: "Where do you live?" },
+  { word: "por qué", meaning: "why", example: "¿Por qué estudias español?", translation: "Why do you study Spanish?" },
+  { word: "cómo", meaning: "how", example: "¿Cómo estás?", translation: "How are you?" },
+  { word: "cuál / cuáles", meaning: "which", example: "¿Cuál prefieres?", translation: "Which do you prefer?" },
+  { word: "cuánto/a/os/as", meaning: "how much / how many", example: "¿Cuántos años tienes?", translation: "How old are you?" },
+];
+const colors = ["#e53935","#8e24aa","#3949ab","#00897b","#43a047","#fb8c00","#6d4c41","#546e7a"];
+
+const wheel = document.getElementById("wheel");
+const panel = document.getElementById("panel");
+
+function layout() {
+  const rect = wheel.getBoundingClientRect();
+  const cx = rect.width / 2;
+  const cy = rect.height / 2;
+  const r = Math.min(rect.width, rect.height) / 2 - 55;
+  words.forEach((w, i) => {
+    const angle = (i / words.length) * 2 * Math.PI - Math.PI / 2;
+    const x = cx + r * Math.cos(angle) - 46;
+    const y = cy + r * Math.sin(angle) - 23;
+    let btn = document.getElementById("spoke-" + i);
+    if (!btn) {
+      btn = document.createElement("button");
+      btn.className = "spoke";
+      btn.id = "spoke-" + i;
+      btn.textContent = w.word;
+      btn.style.background = colors[i];
+      btn.addEventListener("click", () => showWord(i));
+      wheel.appendChild(btn);
+    }
+    btn.style.left = x + "px";
+    btn.style.top = y + "px";
+  });
+}
+
+function showWord(i) {
+  const w = words[i];
+  panel.innerHTML = "<h2>" + w.word + "</h2><p><strong>Meaning:</strong> " + w.meaning + "</p>" +
+    "<p><strong>Example:</strong> " + w.example + " -- <em>" + w.translation + "</em></p>";
+}
+
+document.getElementById("showAll").addEventListener("click", () => {
+  const allList = document.getElementById("allList");
+  const shown = allList.style.display === "block";
+  if (shown) {
+    allList.style.display = "none";
+    return;
+  }
+  const table = document.getElementById("allTable");
+  table.innerHTML = words.map(w =>
+    "<tr><td><strong>" + w.word + "</strong></td><td>" + w.meaning + "</td><td>" + w.example + " -- <em>" + w.translation + "</em></td></tr>"
+  ).join("");
+  allList.style.display = "block";
+});
+
+window.addEventListener("resize", layout);
+layout();
+</script>
+</body>
+</html>

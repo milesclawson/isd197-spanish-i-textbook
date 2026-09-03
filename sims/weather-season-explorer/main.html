@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<title>Weather and Season Explorer</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; background: aliceblue; }
+  #wrap { max-width: 900px; margin: 0 auto; padding: 16px; }
+  h1 { text-align: center; font-size: 22px; margin: 4px 0 6px; }
+  #toggleRow { text-align: center; margin-bottom: 14px; }
+  #toggleRow button { padding: 8px 14px; font-size: 14px; cursor: pointer; }
+  #cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  @media (max-width: 600px) { #cards { grid-template-columns: repeat(2, 1fr); } }
+  .card { border-radius: 10px; padding: 16px 10px; text-align: center; cursor: pointer;
+    color: white; min-height: 150px; display: flex; flex-direction: column; justify-content: center; }
+  .card .icon { font-size: 34px; margin-bottom: 6px; }
+  .card .name { font-size: 17px; font-weight: bold; }
+  .card .en { font-size: 12px; opacity: 0.9; }
+  .card .detail { font-size: 12px; margin-top: 8px; line-height: 1.5; display: none; }
+  .card.open .detail { display: block; }
+  #primavera { background: linear-gradient(160deg, #66bb6a, #ec407a); }
+  #verano { background: linear-gradient(160deg, #fdd835, #fb8c00); color: #333; }
+  #otoño { background: linear-gradient(160deg, #fb8c00, #6d4c41); }
+  #invierno { background: linear-gradient(160deg, #42a5f5, #90caf9); }
+  #quizArea { max-width: 500px; margin: 20px auto 0; background: white; border: 1px solid #ccc;
+    border-radius: 8px; padding: 14px 18px; text-align: center; display: none; }
+  #quizArea .icon { font-size: 30px; }
+  #quizArea input { padding: 6px 10px; font-size: 14px; margin-top: 8px; width: 220px; }
+  #quizArea button { padding: 6px 12px; font-size: 14px; margin-left: 6px; cursor: pointer; }
+  #quizFeedback { margin-top: 8px; font-size: 14px; min-height: 20px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>Weather and Season Explorer</h1>
+  <div id="toggleRow"><button id="quizToggle">Quiz Me</button></div>
+  <div id="cards">
+    <div class="card" id="primavera" data-name="primavera" data-en="spring" data-detail="Hace fresco -- It's cool<br/>Llueve -- It's raining">
+      <div class="icon">🌸</div><div class="name">primavera</div><div class="en">spring</div>
+      <div class="detail">Hace fresco (It's cool)<br/>Llueve (It's raining)</div>
+    </div>
+    <div class="card" id="verano" data-name="verano" data-en="summer" data-detail="Hace calor -- It's hot<br/>Hace sol -- It's sunny">
+      <div class="icon">☀️</div><div class="name">verano</div><div class="en">summer</div>
+      <div class="detail">Hace calor (It's hot)<br/>Hace sol (It's sunny)</div>
+    </div>
+    <div class="card" id="otoño" data-name="otoño" data-en="fall" data-detail="Hace viento -- It's windy<br/>Hace fresco -- It's cool">
+      <div class="icon">🍂</div><div class="name">otoño</div><div class="en">fall</div>
+      <div class="detail">Hace viento (It's windy)<br/>Hace fresco (It's cool)</div>
+    </div>
+    <div class="card" id="invierno" data-name="invierno" data-en="winter" data-detail="Hace frío -- It's cold<br/>Nieva -- It's snowing">
+      <div class="icon">❄️</div><div class="name">invierno</div><div class="en">winter</div>
+      <div class="detail">Hace frío (It's cold)<br/>Nieva (It's snowing)</div>
+    </div>
+  </div>
+  <div id="quizArea">
+    <div class="icon" id="quizIcon">☀️</div>
+    <div>Type the Spanish weather phrase for this icon:</div>
+    <div><input type="text" id="quizInput" placeholder="Hace sol"> <button id="quizCheck">Check</button> <button id="quizNext">Next</button></div>
+    <div id="quizFeedback"></div>
+  </div>
+</div>
+<script>
+const cards = document.querySelectorAll(".card");
+cards.forEach(c => c.addEventListener("click", () => {
+  if (document.getElementById("quizArea").style.display === "block") return;
+  c.classList.toggle("open");
+}));
+
+const quizItems = [
+  { icon: "☀️", phrase: "hace sol" },
+  { icon: "❄️", phrase: "hace frío" },
+  { icon: "🥵", phrase: "hace calor" },
+  { icon: "🌧️", phrase: "llueve" },
+  { icon: "🌨️", phrase: "nieva" },
+  { icon: "🍃", phrase: "hace viento" },
+];
+let quizIndex = 0;
+
+document.getElementById("quizToggle").addEventListener("click", () => {
+  const quizArea = document.getElementById("quizArea");
+  const cardsDiv = document.getElementById("cards");
+  const showing = quizArea.style.display === "block";
+  quizArea.style.display = showing ? "none" : "block";
+  cardsDiv.style.opacity = showing ? "1" : "0.4";
+  cards.forEach(c => c.classList.remove("open"));
+  if (!showing) loadQuiz();
+});
+
+function loadQuiz() {
+  quizIndex = Math.floor(Math.random() * quizItems.length);
+  document.getElementById("quizIcon").textContent = quizItems[quizIndex].icon;
+  document.getElementById("quizInput").value = "";
+  document.getElementById("quizFeedback").textContent = "";
+}
+
+document.getElementById("quizCheck").addEventListener("click", () => {
+  const val = document.getElementById("quizInput").value.trim().toLowerCase();
+  const correct = quizItems[quizIndex].phrase;
+  const fb = document.getElementById("quizFeedback");
+  if (val === correct) {
+    fb.style.color = "#2e7d32";
+    fb.textContent = "¡Correcto!";
+  } else {
+    fb.style.color = "#c62828";
+    fb.textContent = "Not quite -- the answer is \"" + correct + "\".";
+  }
+});
+document.getElementById("quizNext").addEventListener("click", loadQuiz);
+</script>
+</body>
+</html>
