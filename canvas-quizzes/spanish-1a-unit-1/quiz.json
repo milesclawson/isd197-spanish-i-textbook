@@ -1,0 +1,165 @@
+{
+  "title": "Spanish 1A - Unit 1 Test (Capítulo Preliminar y Capítulo 1)",
+  "description": "Covers the alphabet, colors, numbers 1-30, introductions, the verb ser, noun gender, age, date, and Unit 1 vocabulary.",
+  "quiz_type": "assignment",
+  "shuffle_answers": true,
+  "scoring_policy": "keep_highest",
+  "allowed_attempts": 1,
+  "show_correct_answers": true,
+  "time_limit_minutes": 30,
+  "one_question_at_a_time": false,
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "text": "Which letter is silent in Spanish?",
+      "points": 1,
+      "choices": [
+        {"text": "h", "correct": true},
+        {"text": "j", "correct": false},
+        {"text": "ñ", "correct": false},
+        {"text": "ll", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "What does the letter combination \"ll\" sound like in Spanish?",
+      "points": 1,
+      "choices": [
+        {"text": "English \"y\"", "correct": true},
+        {"text": "English \"l\"", "correct": false},
+        {"text": "English \"j\"", "correct": false},
+        {"text": "It is silent", "correct": false}
+      ]
+    },
+    {
+      "type": "short_answer",
+      "text": "Write the Spanish word for the color \"red.\"",
+      "points": 1,
+      "answers": ["rojo"]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "What number is \"veinte\"?",
+      "points": 1,
+      "choices": [
+        {"text": "20", "correct": true},
+        {"text": "12", "correct": false},
+        {"text": "30", "correct": false},
+        {"text": "22", "correct": false}
+      ]
+    },
+    {
+      "type": "short_answer",
+      "text": "Write the Spanish word for the number 16.",
+      "points": 1,
+      "answers": ["dieciseis", "dieciséis"]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "What does \"Mucho gusto\" mean?",
+      "points": 1,
+      "choices": [
+        {"text": "Nice to meet you", "correct": true},
+        {"text": "Good morning", "correct": false},
+        {"text": "See you later", "correct": false},
+        {"text": "How are you?", "correct": false}
+      ]
+    },
+    {
+      "type": "true_false",
+      "text": "\"Igualmente\" means \"goodbye.\"",
+      "points": 1,
+      "correct": false
+    },
+    {
+      "type": "multiple_choice",
+      "text": "Which question asks where someone is from?",
+      "points": 1,
+      "choices": [
+        {"text": "¿De dónde eres?", "correct": true},
+        {"text": "¿Cómo te llamas?", "correct": false},
+        {"text": "¿Cuántos años tienes?", "correct": false},
+        {"text": "¿Cuál es la fecha?", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_answers",
+      "text": "Which of the following are correctly conjugated forms of the verb ser? (select all that apply)",
+      "points": 2,
+      "choices": [
+        {"text": "soy", "correct": true},
+        {"text": "eres", "correct": true},
+        {"text": "tienes", "correct": false},
+        {"text": "somos", "correct": true},
+        {"text": "gusta", "correct": false}
+      ]
+    },
+    {
+      "type": "short_answer",
+      "text": "Complete the sentence: \"Yo ___ estudiante.\"",
+      "points": 1,
+      "answers": ["soy"]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "Which noun ending is usually a sign that a word is masculine?",
+      "points": 1,
+      "choices": [
+        {"text": "-o", "correct": true},
+        {"text": "-a", "correct": false},
+        {"text": "-e", "correct": false},
+        {"text": "-s", "correct": false}
+      ]
+    },
+    {
+      "type": "true_false",
+      "text": "\"La mesa\" uses \"la\" because \"mesa\" is a feminine noun.",
+      "points": 1,
+      "correct": true
+    },
+    {
+      "type": "short_answer",
+      "text": "How do you ask someone their age in Spanish?",
+      "points": 1,
+      "answers": ["¿Cuántos años tienes?", "Cuántos años tienes", "cuantos anos tienes", "¿cuantos años tienes?"]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "What does \"Tengo catorce años\" mean?",
+      "points": 1,
+      "choices": [
+        {"text": "I am fourteen years old", "correct": true},
+        {"text": "I have fourteen books", "correct": false},
+        {"text": "I am in fourteenth grade", "correct": false},
+        {"text": "It is the fourteenth of the month", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "Which category does the word \"el fútbol\" belong to?",
+      "points": 1,
+      "choices": [
+        {"text": "Sports", "correct": true},
+        {"text": "Music", "correct": false},
+        {"text": "School classes", "correct": false},
+        {"text": "Food", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "The Chapter 1 culture video introduces students to which country?",
+      "points": 1,
+      "choices": [
+        {"text": "Spain", "correct": true},
+        {"text": "Mexico", "correct": false},
+        {"text": "Puerto Rico", "correct": false},
+        {"text": "Ecuador", "correct": false}
+      ]
+    },
+    {
+      "type": "essay",
+      "text": "Write a short introduction of yourself in Spanish, at least 3 complete sentences. Include your name, where you are from, and your age.",
+      "points": 4
+    }
+  ]
+}

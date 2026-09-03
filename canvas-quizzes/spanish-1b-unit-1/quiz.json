@@ -1,0 +1,148 @@
+{
+  "title": "Spanish 1B - Unit 1 Test (Review y Capítulo 5)",
+  "description": "Covers a review of Spanish 1A (ser, noun gender, age), regular -er/-ir verbs, weekend activities, clarifier phrases, seasons, weather, and question words.",
+  "quiz_type": "assignment",
+  "shuffle_answers": true,
+  "scoring_policy": "keep_highest",
+  "allowed_attempts": 1,
+  "show_correct_answers": true,
+  "time_limit_minutes": 30,
+  "one_question_at_a_time": false,
+  "questions": [
+    {
+      "type": "short_answer",
+      "text": "Conjugate the verb \"ser\" for the subject \"tú\" (you, informal).",
+      "points": 1,
+      "answers": ["eres"]
+    },
+    {
+      "type": "short_answer",
+      "text": "Conjugate the verb \"comer\" (to eat) for the subject \"yo.\"",
+      "points": 1,
+      "answers": ["como"]
+    },
+    {
+      "type": "short_answer",
+      "text": "Conjugate the verb \"escribir\" (to write) for the subject \"nosotros.\"",
+      "points": 1,
+      "answers": ["escribimos"]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "Which subject pronoun has a different ending between -er and -ir verbs?",
+      "points": 1,
+      "choices": [
+        {"text": "nosotros", "correct": true},
+        {"text": "yo", "correct": false},
+        {"text": "tú", "correct": false},
+        {"text": "ellos/ellas", "correct": false}
+      ]
+    },
+    {
+      "type": "true_false",
+      "text": "-Er verbs and -ir verbs use the exact same ending for the \"yo\" form.",
+      "points": 1,
+      "correct": true
+    },
+    {
+      "type": "multiple_choice",
+      "text": "What does \"leer\" mean?",
+      "points": 1,
+      "choices": [
+        {"text": "to read", "correct": true},
+        {"text": "to run", "correct": false},
+        {"text": "to write", "correct": false},
+        {"text": "to share", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_answers",
+      "text": "Which of the following are -ir verbs? (select all that apply)",
+      "points": 2,
+      "choices": [
+        {"text": "escribir", "correct": true},
+        {"text": "compartir", "correct": true},
+        {"text": "comer", "correct": false},
+        {"text": "correr", "correct": false}
+      ]
+    },
+    {
+      "type": "short_answer",
+      "text": "What clarifier phrase means \"to him\"?",
+      "points": 1,
+      "answers": ["a el", "a él"]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "What does \"A ellos les gusta el fútbol\" mean?",
+      "points": 1,
+      "choices": [
+        {"text": "They like soccer", "correct": true},
+        {"text": "He likes soccer", "correct": false},
+        {"text": "We like soccer", "correct": false},
+        {"text": "You all like soccer", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "Which season is \"el invierno\"?",
+      "points": 1,
+      "choices": [
+        {"text": "Winter", "correct": true},
+        {"text": "Summer", "correct": false},
+        {"text": "Spring", "correct": false},
+        {"text": "Fall", "correct": false}
+      ]
+    },
+    {
+      "type": "short_answer",
+      "text": "Write the Spanish phrase for \"It's sunny.\"",
+      "points": 1,
+      "answers": ["hace sol"]
+    },
+    {
+      "type": "true_false",
+      "text": "\"Nieva\" means \"it's raining.\"",
+      "points": 1,
+      "correct": false
+    },
+    {
+      "type": "multiple_choice",
+      "text": "Which question word asks \"with whom?\"",
+      "points": 1,
+      "choices": [
+        {"text": "¿Con quién?", "correct": true},
+        {"text": "¿Cuándo?", "correct": false},
+        {"text": "¿Qué tiempo hace?", "correct": false},
+        {"text": "¿Dónde?", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "Which question word specifically asks about the weather?",
+      "points": 1,
+      "choices": [
+        {"text": "¿Qué tiempo hace?", "correct": true},
+        {"text": "¿Cuál es la fecha?", "correct": false},
+        {"text": "¿Cómo te llamas?", "correct": false},
+        {"text": "¿De dónde eres?", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "The Chapter 5 culture video introduces students to which U.S. state?",
+      "points": 1,
+      "choices": [
+        {"text": "Florida", "correct": true},
+        {"text": "Texas", "correct": false},
+        {"text": "California", "correct": false},
+        {"text": "New York", "correct": false}
+      ]
+    },
+    {
+      "type": "essay",
+      "text": "Write a short weekend plan in Spanish, at least 3 complete sentences. Include at least one -er or -ir verb, a weather expression, and a clarifier phrase (a mí, a él, a ellos, etc.).",
+      "points": 4
+    }
+  ]
+}

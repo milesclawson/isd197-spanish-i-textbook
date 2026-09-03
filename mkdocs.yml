@@ -3,8 +3,8 @@
 # Use the book-installer skill to add features incrementally
 # (math, mascot, slides, learning graph viewer, etc.).
 
-site_name: 'Spanish I'
-site_description: 'An ACTFL-aligned, Novice-level first-year Spanish course for ISD 197 high school students, covering identity, school life, family, and food through the Entreculturas curriculum with cultural comparisons across the Spanish-speaking world and local Minnesota communities.'
+site_name: 'ISD 197 Spanish Program'
+site_description: 'ACTFL-aligned Spanish courses for ISD 197 -- Spanish I (high school, Entreculturas) and Spanish 1A/1B (middle school, Ven Conmigo) -- with cultural comparisons across the Spanish-speaking world and local Minnesota communities.'
 site_author: 'Miles Lawson'
 site_url: 'https://milesclawson.github.io/isd197-spanish-i-textbook/'
 
@@ -62,6 +62,18 @@ nav:
 
   - MicroSims:
       - List of MicroSims: sims/index.md
+
+  - Spanish 1A:
+      - Course Description: spanish-1a/index.md
+      - "Unit 1: Content": spanish-1a/unit-1/index.md
+      - "Unit 1: Story": spanish-1a/unit-1/story.md
+      - "Unit 1: Daily Rhythm": spanish-1a/unit-1/daily-rhythm.md
+
+  - Spanish 1B:
+      - Course Description: spanish-1b/index.md
+      - "Unit 1: Content": spanish-1b/unit-1/index.md
+      - "Unit 1: Story": spanish-1b/unit-1/story.md
+      - "Unit 1: Daily Rhythm": spanish-1b/unit-1/daily-rhythm.md
 
   - License: license.md
   - Contact: contact.md
@@ -172,7 +184,7 @@ extra:
   # Intelligent-textbook URI scheme (see
   # https://dmccreary.github.io/intelligent-textbooks/uri-scheme/)
   schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
-  textbook_name: 'Spanish I'
+  textbook_name: 'ISD 197 Spanish Program'
   textbook_version: '0.1'
 
   # Google Analytics — uncomment once a property ID exists:
