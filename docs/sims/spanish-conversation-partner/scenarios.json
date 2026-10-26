@@ -1,0 +1,142 @@
+{
+  "levels": {
+    "1": {
+      "label": "Semester 1 (Spanish 1A) — Novice Low to Novice Mid",
+      "speechRate": 0.8
+    },
+    "2": {
+      "label": "Semester 2 (Spanish 1B) — Novice Mid to Novice High",
+      "speechRate": 0.92
+    }
+  },
+  "scenarios": [
+    {
+      "id": "s1u1-meet",
+      "sem": 1,
+      "unit": "1A Unit 1",
+      "emoji": "👋",
+      "title": "Meet a new classmate",
+      "canDo": "I can greet someone, say my name and age, and say where I am from.",
+      "opening": "¡Hola! Me llamo Sofía. ¿Cómo te llamas?",
+      "offline": [
+        "¡Hola! Me llamo Sofía. ¿Cómo te llamas?",
+        "¡Mucho gusto! ¿Cómo estás?",
+        "¿De dónde eres?",
+        "¿Cuántos años tienes?",
+        "¡Qué bien! Hasta luego."
+      ]
+    },
+    {
+      "id": "s1u2-room",
+      "sem": 1,
+      "unit": "1A Unit 2",
+      "emoji": "🎒",
+      "title": "Supplies for school",
+      "canDo": "I can say what school supplies I have, need, and want.",
+      "opening": "¡Buenos días! ¿Qué necesitas hoy?",
+      "offline": [
+        "¡Buenos días! ¿Qué necesitas hoy?",
+        "¿De qué color es el cuaderno?",
+        "¿Cuántos lápices necesitas?",
+        "Cuesta tres dólares. ¿Quieres una mochila?",
+        "¡Gracias! Adiós."
+      ]
+    },
+    {
+      "id": "s1u3-people",
+      "sem": 1,
+      "unit": "1A Unit 3",
+      "emoji": "🧑‍🤝‍🧑",
+      "title": "Describe people and your day",
+      "canDo": "I can describe myself and others, tell the time, and say what I like.",
+      "opening": "¡Hola! ¿Cómo eres tú? Yo soy simpático y alto.",
+      "offline": [
+        "¡Hola! ¿Cómo eres tú?",
+        "¿Eres simpático o serio?",
+        "¿Te gusta la clase de arte?",
+        "¿Qué hora es la clase de ciencias?",
+        "¡Genial! Nos vemos."
+      ]
+    },
+    {
+      "id": "s1u4-free",
+      "sem": 1,
+      "unit": "1A Unit 4",
+      "emoji": "⚽",
+      "title": "What do you do after school?",
+      "canDo": "I can say what I do in my free time and where I go.",
+      "opening": "¡Hola! ¿Qué haces esta tarde?",
+      "offline": [
+        "¡Hola! ¿Qué haces esta tarde?",
+        "¿Te gusta nadar?",
+        "¿Adónde vas?",
+        "¿Juegas al fútbol o al baloncesto?",
+        "¡Qué divertido! Hasta mañana."
+      ]
+    },
+    {
+      "id": "s2u1-weekend",
+      "sem": 2,
+      "unit": "1B Unit 1",
+      "emoji": "🌤️",
+      "title": "Weekend and weather",
+      "canDo": "I can talk about what I do on weekends and in different weather and seasons.",
+      "opening": "¡Hola! Hoy hace mucho calor aquí. ¿Qué tiempo hace allá?",
+      "offline": [
+        "¡Hola! ¿Qué tiempo hace allá?",
+        "¿Qué haces los sábados?",
+        "¿Por qué te gusta el invierno?",
+        "Aquí llueve mucho. ¿Qué haces cuando llueve?",
+        "¡Qué interesante! Hasta pronto."
+      ]
+    },
+    {
+      "id": "s2u2-family",
+      "sem": 2,
+      "unit": "1B Unit 2",
+      "emoji": "👨‍👩‍👧",
+      "title": "Family and chores",
+      "canDo": "I can describe my family and say what chores people do at home.",
+      "opening": "¡Qué bonita foto! ¿Quién es la persona de azul?",
+      "offline": [
+        "¡Qué bonita foto! ¿Quién es?",
+        "¿Cuántas personas hay en tu familia?",
+        "¿Cómo es tu hermano?",
+        "¿Qué haces en casa los sábados?",
+        "¡Qué familia más simpática!"
+      ]
+    },
+    {
+      "id": "s2u3-plans",
+      "sem": 2,
+      "unit": "1B Unit 3",
+      "emoji": "📱",
+      "title": "Make plans by phone",
+      "canDo": "I can invite someone, accept or decline, and agree on a plan.",
+      "opening": "¡Hola! Soy Valeria. ¿Qué piensas hacer este fin de semana?",
+      "offline": [
+        "¡Hola! ¿Qué piensas hacer este fin de semana?",
+        "¿Quieres ir al cine?",
+        "¿A qué hora?",
+        "Lo siento, no puedo. ¿Qué vas a hacer el domingo?",
+        "¡Perfecto! Nos vemos."
+      ]
+    },
+    {
+      "id": "s2u4-restaurant",
+      "sem": 2,
+      "unit": "1B Unit 4",
+      "emoji": "🍽️",
+      "title": "At the restaurant",
+      "canDo": "I can order a meal, ask questions, and talk about what I like to eat.",
+      "opening": "¡Bienvenido! ¿Mesa para cuántas personas?",
+      "offline": [
+        "¡Bienvenido! ¿Mesa para cuántas personas?",
+        "¿Qué desea beber?",
+        "¿Qué prefiere, pollo o pescado?",
+        "Lo siento, no hay pollo hoy. ¿Qué más quiere?",
+        "¡Muy bien! Aquí está la cuenta."
+      ]
+    }
+  ]
+}

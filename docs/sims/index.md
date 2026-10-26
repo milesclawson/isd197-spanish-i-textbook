@@ -23,6 +23,7 @@ Plotly, Venn.js).
 | [Vocabulary Flashcard Sprint](vocabulary-flashcard-sprint/index.md) | Spanish 1A, Unit 1 | p5.js | Remember |
 | [-Er and -Ir Verb Builder](er-ir-verb-builder/index.md) | Spanish 1B, Unit 1 | p5.js | Apply |
 | [Weather and Season Explorer](weather-season-explorer/index.md) | Spanish 1B, Unit 1 | Custom HTML/CSS/JS | Understand |
+| [Spanish Conversation Partner](spanish-conversation-partner/index.md) | Spanish 1A and 1B | Custom HTML/JS + Claude | Apply |
 
 All 11 are status **Built** — implemented and functional, awaiting instructor
 review before being marked **Approved**.
