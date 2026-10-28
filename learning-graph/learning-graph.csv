@@ -1,0 +1,201 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Spanish Alphabet,,FOUND
+2,Vowel Sounds,1,FOUND
+3,Syllable Stress,1|2,FOUND
+4,Written Accent Marks,3,FOUND
+5,Cognates,,FOUND
+6,False Cognates,5,FOUND
+7,Classroom Expressions,,FOUND
+8,Question Words,,FOUND
+9,Asking Questions,8,FOUND
+10,Numbers 0-30,,FOUND
+11,Numbers 31-100,10,FOUND
+12,Days Of The Week,,FOUND
+13,Months Of The Year,,FOUND
+14,Telling Time,10|12|13,FOUND
+15,Subject Pronouns,,FOUND
+16,Gender Of Nouns,,FOUND
+17,Plural Of Nouns,16,FOUND
+18,Capitalization Rules,1,FOUND
+19,Formal Greetings,7,GREET
+20,Informal Greetings,7,GREET
+21,Formal Vs Informal Language,19|20,GRAM
+22,Introducing Yourself,21|15,GREET
+23,Introducing Others,22,GREET
+24,Saying Goodbye,19|20,GREET
+25,Mucho Gusto Expressions,22,GREET
+26,Personal Identity Vocabulary,22,GREET
+27,Nationality Vocabulary,26|18,GREET
+28,Age Expressions,10|26,GREET
+29,The Verb Ser,15|16,VERB
+30,Ser Conjugation Present,29,VERB
+31,Uses Of Ser,30,VERB
+32,Favorite Activities Vocabulary,26,GREET
+33,Hobbies Vocabulary,32,GREET
+34,The Verb Gustar,15,VERB
+35,Gustar With Infinitives,34,VERB
+36,Expressing Likes,35|33,GREET
+37,Expressing Dislikes,35|33,GREET
+38,Indirect Object Pronoun Me,34,VERB
+39,Indirect Object Pronoun Te,38,VERB
+40,Indirect Object Pronoun Le,38,VERB
+41,Respectful Communication,21,CULT
+42,Cultural Norms In Greetings,19|20,CULT
+43,Paraguay Overview,42,CULT
+44,Texas Hispanic Community,42,CULT
+45,Comparing Greeting Customs,43|44,CULT
+46,School Subjects Vocabulary,16|17,SCHL
+47,Classroom Objects Vocabulary,16|17,SCHL
+48,School Schedule Vocabulary,46|14,SCHL
+49,Daily Routine Vocabulary,14,SCHL
+50,Indefinite Articles,16|17,GRAM
+51,Definite Articles,16|17,GRAM
+52,Existential Hay,50,GRAM
+53,Referring To People And Things,51,GRAM
+54,Present Tense -Ar Verbs,15,VERB
+55,Regular -Ar Verb Endings,54,VERB
+56,Common -Ar Verbs,55,VERB
+57,Talking About Activities,56|33,SCHL
+58,Time Expressions,14,SCHL
+59,Frequency Adverbs,58,SCHL
+60,Days Of School Week,12|48,SCHL
+61,Describing A Typical Day,49|56|58,SCHL
+62,Learning Styles Vocabulary,46,SCHL
+63,Interpreting Images And Video,8,SCHL
+64,Interpreting Schedules,48|58,SCHL
+65,Costa Rica Education System,62,CULT
+66,California School Life,62,CULT
+67,Comparing School Systems,65|66,CULT
+68,Approaches To Learning,67,CULT
+69,Presenting School Information,48|61,SCHL
+70,Exchanging Schedule Information,48|9,SCHL
+71,Sequencing Daily Events,61,SCHL
+72,Question Formation Practice,9,SCHL
+73,Classroom Interaction Phrases,7,SCHL
+74,Reading Comprehension Strategies,63,SCHL
+75,Listening Comprehension Strategies,63,SCHL
+76,Family Member Vocabulary,16|17,FAM
+77,Extended Family Vocabulary,76,FAM
+78,Describing Family Members,76|29,FAM
+79,Adjective Agreement Gender,16,GRAM
+80,Adjective Agreement Number,17|79,GRAM
+81,Descriptive Adjectives,79|80,GRAM
+82,Physical Description Vocabulary,81,FAM
+83,Personality Traits Vocabulary,81,FAM
+84,The Verb Estar,15|16,VERB
+85,Estar Conjugation Present,84,VERB
+86,Uses Of Estar,85,VERB
+87,Ser Vs Estar,31|86,VERB
+88,Expressing Location,86,FAM
+89,Home Vocabulary,16|17,FAM
+90,Where Family Lives,89|88,FAM
+91,Present Tense -Er Verbs,15,VERB
+92,Present Tense -Ir Verbs,15,VERB
+93,Regular -Er Verb Endings,91,VERB
+94,Regular -Ir Verb Endings,92,VERB
+95,Common -Er And -Ir Verbs,93|94,VERB
+96,Weekend Plans Vocabulary,95|33,FAM
+97,Asking About Plans,96|9,FAM
+98,Digital Album Project,78|90,FAM
+99,Presenting Family Information,78|98,FAM
+100,Spain Family Life,78,CULT
+101,Colorado Community,78,CULT
+102,Comparing Family Structures,100|101,CULT
+103,Role Of Family In Identity,102,CULT
+104,Where We Live Vocabulary,90,FAM
+105,Home And Belonging,104|103,FAM
+106,Food Vocabulary,16|17,FOOD
+107,Meal Time Vocabulary,106|14,FOOD
+108,Healthy Eating Vocabulary,106,FOOD
+109,Market Vocabulary,106,FOOD
+110,Shopping Expressions,109,FOOD
+111,Stem-Changing Verbs E To Ie,54|91|92,VERB
+112,Common Stem-Changing Verbs,111,VERB
+113,Making Requests,112,FOOD
+114,Making Recommendations,112,FOOD
+115,The Verb Querer,111,VERB
+116,The Verb Preferir,111,VERB
+117,The Verb Encantar,34,VERB
+118,Gustar Vs Encantar,35|117,VERB
+119,Expressing Food Preferences,118|106,FOOD
+120,Expressing Habits,59|56,FOOD
+121,Demonstrative Adjectives,79|80,GRAM
+122,Este Ese Aquel,121,GRAM
+123,Referring To Specific Items,122,GRAM
+124,Menu Vocabulary,106|107,FOOD
+125,Creating A Menu,124|119,FOOD
+126,Presenting Food Preferences,119|125,FOOD
+127,Mexico Food Traditions,106,CULT
+128,North Carolina Community,127,CULT
+129,Geography And Food Traditions,127|128,CULT
+130,Comparing Food Cultures,129,CULT
+131,Intercultural Understanding,45|68|102|130,CULT
+132,Sharing Food Traditions,130,CULT
+133,Market Shopping Dialogue,110|113,FOOD
+134,Ordering Food Phrases,110|107,FOOD
+135,Food Culture Reflection,132,FOOD
+136,ACTFL Proficiency Levels,,ACTFL
+137,Novice Level Proficiency,136,ACTFL
+138,Interpretive Communication,136,ACTFL
+139,Interpersonal Communication,136,ACTFL
+140,Presentational Communication,136,ACTFL
+141,ACTFL Communication Standard,138|139|140,ACTFL
+142,ACTFL Comparisons Standard,136,ACTFL
+143,ACTFL Cultures Standard,136,ACTFL
+144,Cultural Products,143,ACTFL
+145,Cultural Practices,143,ACTFL
+146,Cultural Perspectives,144|145,ACTFL
+147,Comparing Language Structures,142,ACTFL
+148,Language Register,21,GRAM
+149,Nonverbal Communication,139,ACTFL
+150,Intercultural Competence,146|131,ACTFL
+151,Communicating Respectfully,41|148,ACTFL
+152,Negotiating Meaning,139,ACTFL
+153,Circumlocution Strategies,152,ACTFL
+154,Self-Assessment Of Proficiency,137,ACTFL
+155,Can-Do Statements,137,ACTFL
+156,Vocabulary Flashcard Practice,26,PRAC
+157,Grammar Drill Practice,54,PRAC
+158,Listening Practice Activities,75,PRAC
+159,Speaking Practice Activities,22,PRAC
+160,Reading Practice Activities,74,PRAC
+161,Writing Practice Activities,22,PRAC
+162,Formative Assessment,156|157,ASMT
+163,Summative Assessment,162,ASMT
+164,Performance Assessment,163,ASMT
+165,Peer Conversation Practice,159,PRAC
+166,Oral Presentation Skills,159,PRAC
+167,Written Composition Skills,161,PRAC
+168,Self-Introduction Presentation,166|22,ASMT
+169,Family Album Presentation,98|166,ASMT
+170,Menu Presentation Project,125|166,ASMT
+171,Canvas Learning Platform,,PRAC
+172,Online Practice Tools,171|156,PRAC
+173,Vocabulary Quiz Strategies,156,PRAC
+174,Grammar Quiz Strategies,157,PRAC
+175,Peer Feedback Practice,165,PRAC
+176,Error Correction Strategies,175,PRAC
+177,Using A Bilingual Dictionary,,FOUND
+178,Context Clues For Vocabulary,177|26,FOUND
+179,Cognate Recognition Strategy,5|6,FOUND
+180,Pronunciation Practice,2|3,FOUND
+181,Minnesota Community Connections,44|101,CULT
+182,Home Vs Target Culture,130,CULT
+183,Spanish Speaking World Overview,,CULT
+184,Diversity In Spanish Dialects,183,CULT
+185,Regional Vocabulary Variation,184|106,CULT
+186,Formal Commands Preview,21,GRAM
+187,Reflexive Verbs Preview,95,GRAM
+188,Preterite Tense Preview,54|91|92,GRAM
+189,Building Vocabulary Networks,26|106,PRAC
+190,Word Families In Spanish,189,PRAC
+191,Sentence Structure Basics,15|54,GRAM
+192,Subject Verb Agreement,191,GRAM
+193,Negation In Spanish,192,GRAM
+194,Basic Conjunctions,191,GRAM
+195,Basic Prepositions,191,GRAM
+196,Question Intonation,9|180,FOUND
+197,Cultural Immersion Activities,150,PRAC
+198,Authentic Text Interpretation,74|75|179,PRAC
+199,Video-Based Learning Strategies,63,PRAC
+200,End-of-Year Reflection,154|197,ACTFL

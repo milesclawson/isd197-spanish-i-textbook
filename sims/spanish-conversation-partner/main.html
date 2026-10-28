@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spanish Conversation Partner</title>
+<style>
+  :root { --red:#c62828; --amber:#ffb300; --bg:#fff; --card:#f6f6f6; --ink:#222; --muted:#666; --me:#e3f2fd; --bot:#fff3e0; --line:#ddd; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1b1b1b; --card:#262626; --ink:#eee; --muted:#aaa; --me:#1e3a5f; --bot:#4a3512; --line:#444; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, Arial, sans-serif; background:var(--bg); color:var(--ink); height:100vh; display:flex; flex-direction:column; }
+  header { padding:8px 12px; background:var(--red); color:#fff; display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  header h1 { font-size:16px; margin:0; flex:1; }
+  button, select { font:inherit; padding:8px 12px; border-radius:8px; border:1px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  button.primary { background:var(--amber); color:#222; border-color:var(--amber); font-weight:600; }
+  #menu { padding:12px; overflow:auto; flex:1; }
+  .tabs { display:flex; gap:8px; margin-bottom:12px; }
+  .tabs button.on { background:var(--red); color:#fff; border-color:var(--red); }
+  .level { color:var(--muted); font-size:13px; margin:0 0 10px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:10px; }
+  .card { text-align:left; padding:12px; }
+  .card .e { font-size:26px; } .card b { display:block; margin:4px 0; } .card small { color:var(--muted); display:block; }
+  #chat { display:none; flex:1; flex-direction:column; min-height:0; }
+  #goal { padding:6px 12px; font-size:13px; background:var(--card); border-bottom:1px solid var(--line); }
+  #log { flex:1; overflow:auto; padding:12px; display:flex; flex-direction:column; gap:8px; }
+  .msg { max-width:85%; padding:8px 12px; border-radius:12px; white-space:pre-wrap; line-height:1.4; }
+  .bot { background:var(--bot); align-self:flex-start; } .me { background:var(--me); align-self:flex-end; }
+  .note { align-self:center; color:var(--muted); font-size:13px; text-align:center; max-width:95%; }
+  .fb { background:var(--card); border:1px solid var(--line); align-self:stretch; max-width:100%; }
+  #bar { padding:8px; border-top:1px solid var(--line); display:flex; gap:6px; flex-wrap:wrap; }
+  #bar .row { display:flex; gap:6px; width:100%; }
+  #txt { flex:1; padding:10px; border-radius:8px; border:1px solid var(--line); font:inherit; background:var(--bg); color:var(--ink); min-width:0; }
+  #mic.rec { background:#d32f2f; color:#fff; border-color:#d32f2f; animation:pulse 1s infinite; }
+  @keyframes pulse { 50% { opacity:.6; } }
+  .tools label { font-size:13px; color:var(--muted); display:flex; align-items:center; gap:4px; }
+  .tools { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+  #warn { font-size:12px; color:var(--muted); padding:0 12px 6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🗣️ Spanish Conversation Partner</h1>
+  <button id="back" style="display:none">← Scenarios</button>
+</header>
+
+<section id="menu">
+  <div class="tabs" role="tablist">
+    <button id="t1" role="tab">Semester 1 · Spanish 1A</button>
+    <button id="t2" role="tab">Semester 2 · Spanish 1B</button>
+  </div>
+  <p class="level" id="levelLabel"></p>
+  <div class="grid" id="grid"></div>
+  <p id="warn">Please don't share your real last name, address, phone number, or school. Invent answers if you like! Your conversation stays in your browser unless you download it.</p>
+</section>
+
+<section id="chat">
+  <div id="goal"></div>
+  <div id="log" aria-live="polite"></div>
+  <div id="bar">
+    <div class="row">
+      <button id="mic" title="Speak in Spanish" aria-label="Speak">🎤</button>
+      <input id="txt" placeholder="Escribe aquí…" autocomplete="off" lang="es" maxlength="300">
+      <button id="send" class="primary">Enviar</button>
+    </div>
+    <div class="tools">
+      <button id="help">💡 Help me start</button>
+      <button id="eng">🇺🇸 What did they say?</button>
+      <button id="fin">✅ Finish</button>
+      <button id="dl">⬇ Save</button>
+      <label><input type="checkbox" id="voice" checked> Hear Spanish</label>
+      <label>Speech: <select id="slang"><option value="es-US">US</option><option value="es-MX">México</option><option value="es-ES">España</option></select></label>
+    </div>
+  </div>
+</section>
+
+<script src="config.js"></script>
+<script>
+const $ = (id) => document.getElementById(id);
+const ENDPOINT = (window.SPANISH_PARTNER_CONFIG || {}).endpoint || "";
+let DATA, sem = 1, scn = null, msgs = [], offlineIdx = 0, busy = false;
+
+fetch("scenarios.json").then((r) => r.json()).then((d) => { DATA = d; showMenu(); });
+
+function showMenu() {
+  $("chat").style.display = "none"; $("menu").style.display = "block"; $("back").style.display = "none";
+  stopAll();
+  $("t1").classList.toggle("on", sem === 1); $("t2").classList.toggle("on", sem === 2);
+  $("levelLabel").textContent = DATA.levels[sem].label + (ENDPOINT ? "" : "  ·  Practice mode (scripted partner)");
+  $("grid").innerHTML = "";
+  DATA.scenarios.filter((s) => s.sem === sem).forEach((s) => {
+    const b = document.createElement("button"); b.className = "card";
+    b.innerHTML = `<span class="e">${s.emoji}</span><b>${s.title}</b><small>${s.unit}</small><small>${s.canDo}</small>`;
+    b.onclick = () => start(s); $("grid").appendChild(b);
+  });
+}
+$("t1").onclick = () => { sem = 1; showMenu(); };
+$("t2").onclick = () => { sem = 2; showMenu(); };
+$("back").onclick = showMenu;
+
+function start(s) {
+  scn = s; msgs = []; offlineIdx = 0;
+  $("menu").style.display = "none"; $("chat").style.display = "flex"; $("back").style.display = "";
+  $("goal").textContent = `🎯 ${s.canDo}`; $("log").innerHTML = "";
+  note(`${s.emoji} ${s.title}. Speak 🎤 or type. Short answers are great!`);
+  addBot(s.opening);
+  $("txt").focus();
+}
+
+function bubble(cls, text) { const d = document.createElement("div"); d.className = "msg " + cls; d.textContent = text; $("log").appendChild(d); $("log").scrollTop = 1e9; return d; }
+function note(t) { const d = document.createElement("div"); d.className = "note"; d.textContent = t; $("log").appendChild(d); }
+function addBot(t) { bubble("bot", t); msgs.push({ role: "assistant", content: t }); speak(t); }
+
+async function api(mode) {
+  if (!ENDPOINT) return offline(mode);
+  const r = await fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ scenario: scn.id, mode, messages: msgs }) });
+  const j = await r.json(); if (!r.ok) throw new Error(j.error || "error"); return j.text;
+}
+function offline(mode) {
+  if (mode === "help") return "Me llamo ___. (My name is ___.)\nSí / No. (Yes / No.)";
+  if (mode === "translate") return "(Practice mode has no live translation. Ask your teacher or use the textbook vocabulary.)";
+  if (mode === "feedback") return "**Practice mode:** the live tutor is not connected yet, so there is no feedback to show.";
+  return scn.offline[Math.min(++offlineIdx, scn.offline.length - 1)];
+}
+
+async function ask(mode, label) {
+  if (busy) return; busy = true; setBusy(true);
+  const wait = bubble("note", label || "…");
+  try {
+    const t = await api(mode); wait.remove();
+    if (mode === "chat") addBot(t);
+    else { const d = bubble(mode === "feedback" ? "fb" : "note", t.replace(/\*\*/g, "")); if (mode === "feedback") lastFeedback = t; }
+  } catch (e) { wait.textContent = "The tutor can't be reached right now. Try again in a moment."; }
+  busy = false; setBusy(false);
+}
+let lastFeedback = "";
+function setBusy(b) { ["send", "help", "eng", "fin"].forEach((i) => ($(i).disabled = b)); }
+
+function sendText() {
+  const t = $("txt").value.trim(); if (!t || busy) return;
+  $("txt").value = ""; stopAll(); bubble("me", t); msgs.push({ role: "user", content: t }); ask("chat");
+}
+$("send").onclick = sendText;
+$("txt").addEventListener("keydown", (e) => { if (e.key === "Enter") sendText(); });
+$("help").onclick = () => ask("help", "Thinking of ideas…");
+$("eng").onclick = () => ask("translate", "Translating…");
+$("fin").onclick = () => ask("feedback", "Writing your feedback…");
+$("dl").onclick = () => {
+  const lines = msgs.map((m) => (m.role === "user" ? "Me: " : `${scn.title} partner: `) + m.content);
+  if (lastFeedback) lines.push("", "FEEDBACK", lastFeedback);
+  const a = document.createElement("a"); a.download = "conversation-" + scn.id + ".txt";
+  a.href = URL.createObjectURL(new Blob([`${scn.title} (${scn.unit})\n${scn.canDo}\n\n` + lines.join("\n")], { type: "text/plain" })); a.click();
+};
+
+// ---- Speech out ----
+function speak(text) {
+  if (!$("voice").checked || !("speechSynthesis" in window)) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text.replace(/\n.*Click Finish.*$/s, ""));
+  u.lang = $("slang").value; u.rate = DATA.levels[scn.sem].speechRate;
+  const v = speechSynthesis.getVoices().find((v) => v.lang.replace("_", "-") === u.lang) || speechSynthesis.getVoices().find((v) => v.lang.startsWith("es"));
+  if (v) u.voice = v; speechSynthesis.speak(u);
+}
+function stopAll() { try { speechSynthesis.cancel(); } catch {} if (rec) try { rec.abort(); } catch {} }
+if ("speechSynthesis" in window) speechSynthesis.onvoiceschanged = () => {};
+
+// ---- Speech in ----
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec = null, listening = false;
+if (!SR) { $("mic").disabled = true; $("mic").title = "Speech input needs Chrome, Edge, or Safari. You can still type."; }
+$("mic").onclick = () => {
+  if (listening) { rec.stop(); return; }
+  speechSynthesis.cancel();
+  rec = new SR(); rec.lang = $("slang").value; rec.interimResults = true; rec.maxAlternatives = 1;
+  rec.onstart = () => { listening = true; $("mic").classList.add("rec"); $("txt").placeholder = "Te escucho…"; };
+  rec.onresult = (e) => { $("txt").value = Array.from(e.results).map((r) => r[0].transcript).join(" "); };
+  rec.onerror = (e) => { note(e.error === "not-allowed" ? "Microphone is blocked. Allow it in the browser address bar, or type instead." : "I couldn't hear you. Try again or type."); };
+  rec.onend = () => { listening = false; $("mic").classList.remove("rec"); $("txt").placeholder = "Escribe aquí…"; if ($("txt").value.trim()) $("txt").focus(); };
+  rec.start();
+};
+</script>
+</body>
+</html>

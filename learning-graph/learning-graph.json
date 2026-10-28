@@ -1,0 +1,2180 @@
+{
+  "metadata": {
+    "title": "Spanish I",
+    "description": "An ACTFL-aligned, Novice-level first-year Spanish course for ISD 197 high school students, covering identity, school life, family, and food through the Entreculturas curriculum with cultural comparisons across the Spanish-speaking world and local Minnesota communities.",
+    "creator": "Miles Lawson",
+    "date": "2026-08-31",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundational Mechanics & Literacy Strategies",
+      "color": "SteelBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "VERB": {
+      "classifierName": "Verb Systems",
+      "color": "DarkSlateBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "GRAM": {
+      "classifierName": "Grammar Mechanics",
+      "color": "DarkGreen",
+      "font": {
+        "color": "white"
+      }
+    },
+    "GREET": {
+      "classifierName": "Greetings & Identity Vocabulary",
+      "color": "LimeGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SCHL": {
+      "classifierName": "School & Daily Life Vocabulary",
+      "color": "Gold",
+      "font": {
+        "color": "black"
+      }
+    },
+    "FAM": {
+      "classifierName": "Family & Home Vocabulary",
+      "color": "DarkGoldenrod",
+      "font": {
+        "color": "white"
+      }
+    },
+    "FOOD": {
+      "classifierName": "Food & Market Vocabulary",
+      "color": "Khaki",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CULT": {
+      "classifierName": "Cultural Comparisons & Reflection",
+      "color": "Teal",
+      "font": {
+        "color": "white"
+      }
+    },
+    "ACTFL": {
+      "classifierName": "ACTFL Framework & Communication Modes",
+      "color": "DodgerBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "PRAC": {
+      "classifierName": "Practice, Tools & Study Strategies",
+      "color": "LightSkyBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ASMT": {
+      "classifierName": "Assessment & Capstone Projects",
+      "color": "Crimson",
+      "font": {
+        "color": "white"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Spanish Alphabet",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Vowel Sounds",
+      "group": "FOUND"
+    },
+    {
+      "id": 3,
+      "label": "Syllable Stress",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Written Accent Marks",
+      "group": "FOUND"
+    },
+    {
+      "id": 5,
+      "label": "Cognates",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 6,
+      "label": "False Cognates",
+      "group": "FOUND"
+    },
+    {
+      "id": 7,
+      "label": "Classroom Expressions",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 8,
+      "label": "Question Words",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 9,
+      "label": "Asking Questions",
+      "group": "FOUND"
+    },
+    {
+      "id": 10,
+      "label": "Numbers 0-30",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 11,
+      "label": "Numbers 31-100",
+      "group": "FOUND"
+    },
+    {
+      "id": 12,
+      "label": "Days Of The Week",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 13,
+      "label": "Months Of The Year",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 14,
+      "label": "Telling Time",
+      "group": "FOUND"
+    },
+    {
+      "id": 15,
+      "label": "Subject Pronouns",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 16,
+      "label": "Gender Of Nouns",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 17,
+      "label": "Plural Of Nouns",
+      "group": "FOUND"
+    },
+    {
+      "id": 18,
+      "label": "Capitalization Rules",
+      "group": "FOUND"
+    },
+    {
+      "id": 19,
+      "label": "Formal Greetings",
+      "group": "GREET"
+    },
+    {
+      "id": 20,
+      "label": "Informal Greetings",
+      "group": "GREET"
+    },
+    {
+      "id": 21,
+      "label": "Formal Vs Informal Language",
+      "group": "GRAM"
+    },
+    {
+      "id": 22,
+      "label": "Introducing Yourself",
+      "group": "GREET"
+    },
+    {
+      "id": 23,
+      "label": "Introducing Others",
+      "group": "GREET"
+    },
+    {
+      "id": 24,
+      "label": "Saying Goodbye",
+      "group": "GREET"
+    },
+    {
+      "id": 25,
+      "label": "Mucho Gusto Expressions",
+      "group": "GREET"
+    },
+    {
+      "id": 26,
+      "label": "Personal Identity Vocabulary",
+      "group": "GREET"
+    },
+    {
+      "id": 27,
+      "label": "Nationality Vocabulary",
+      "group": "GREET"
+    },
+    {
+      "id": 28,
+      "label": "Age Expressions",
+      "group": "GREET"
+    },
+    {
+      "id": 29,
+      "label": "The Verb Ser",
+      "group": "VERB"
+    },
+    {
+      "id": 30,
+      "label": "Ser Conjugation Present",
+      "group": "VERB"
+    },
+    {
+      "id": 31,
+      "label": "Uses Of Ser",
+      "group": "VERB"
+    },
+    {
+      "id": 32,
+      "label": "Favorite Activities Vocabulary",
+      "group": "GREET"
+    },
+    {
+      "id": 33,
+      "label": "Hobbies Vocabulary",
+      "group": "GREET"
+    },
+    {
+      "id": 34,
+      "label": "The Verb Gustar",
+      "group": "VERB"
+    },
+    {
+      "id": 35,
+      "label": "Gustar With Infinitives",
+      "group": "VERB"
+    },
+    {
+      "id": 36,
+      "label": "Expressing Likes",
+      "group": "GREET"
+    },
+    {
+      "id": 37,
+      "label": "Expressing Dislikes",
+      "group": "GREET"
+    },
+    {
+      "id": 38,
+      "label": "Indirect Object Pronoun Me",
+      "group": "VERB"
+    },
+    {
+      "id": 39,
+      "label": "Indirect Object Pronoun Te",
+      "group": "VERB"
+    },
+    {
+      "id": 40,
+      "label": "Indirect Object Pronoun Le",
+      "group": "VERB"
+    },
+    {
+      "id": 41,
+      "label": "Respectful Communication",
+      "group": "CULT"
+    },
+    {
+      "id": 42,
+      "label": "Cultural Norms In Greetings",
+      "group": "CULT"
+    },
+    {
+      "id": 43,
+      "label": "Paraguay Overview",
+      "group": "CULT"
+    },
+    {
+      "id": 44,
+      "label": "Texas Hispanic Community",
+      "group": "CULT"
+    },
+    {
+      "id": 45,
+      "label": "Comparing Greeting Customs",
+      "group": "CULT"
+    },
+    {
+      "id": 46,
+      "label": "School Subjects Vocabulary",
+      "group": "SCHL"
+    },
+    {
+      "id": 47,
+      "label": "Classroom Objects Vocabulary",
+      "group": "SCHL"
+    },
+    {
+      "id": 48,
+      "label": "School Schedule Vocabulary",
+      "group": "SCHL"
+    },
+    {
+      "id": 49,
+      "label": "Daily Routine Vocabulary",
+      "group": "SCHL"
+    },
+    {
+      "id": 50,
+      "label": "Indefinite Articles",
+      "group": "GRAM"
+    },
+    {
+      "id": 51,
+      "label": "Definite Articles",
+      "group": "GRAM"
+    },
+    {
+      "id": 52,
+      "label": "Existential Hay",
+      "group": "GRAM"
+    },
+    {
+      "id": 53,
+      "label": "Referring To People And Things",
+      "group": "GRAM"
+    },
+    {
+      "id": 54,
+      "label": "Present Tense -Ar Verbs",
+      "group": "VERB"
+    },
+    {
+      "id": 55,
+      "label": "Regular -Ar Verb Endings",
+      "group": "VERB"
+    },
+    {
+      "id": 56,
+      "label": "Common -Ar Verbs",
+      "group": "VERB"
+    },
+    {
+      "id": 57,
+      "label": "Talking About Activities",
+      "group": "SCHL"
+    },
+    {
+      "id": 58,
+      "label": "Time Expressions",
+      "group": "SCHL"
+    },
+    {
+      "id": 59,
+      "label": "Frequency Adverbs",
+      "group": "SCHL"
+    },
+    {
+      "id": 60,
+      "label": "Days Of School Week",
+      "group": "SCHL"
+    },
+    {
+      "id": 61,
+      "label": "Describing A Typical Day",
+      "group": "SCHL"
+    },
+    {
+      "id": 62,
+      "label": "Learning Styles Vocabulary",
+      "group": "SCHL"
+    },
+    {
+      "id": 63,
+      "label": "Interpreting Images And Video",
+      "group": "SCHL"
+    },
+    {
+      "id": 64,
+      "label": "Interpreting Schedules",
+      "group": "SCHL"
+    },
+    {
+      "id": 65,
+      "label": "Costa Rica Education System",
+      "group": "CULT"
+    },
+    {
+      "id": 66,
+      "label": "California School Life",
+      "group": "CULT"
+    },
+    {
+      "id": 67,
+      "label": "Comparing School Systems",
+      "group": "CULT"
+    },
+    {
+      "id": 68,
+      "label": "Approaches To Learning",
+      "group": "CULT"
+    },
+    {
+      "id": 69,
+      "label": "Presenting School Information",
+      "group": "SCHL"
+    },
+    {
+      "id": 70,
+      "label": "Exchanging Schedule Information",
+      "group": "SCHL"
+    },
+    {
+      "id": 71,
+      "label": "Sequencing Daily Events",
+      "group": "SCHL"
+    },
+    {
+      "id": 72,
+      "label": "Question Formation Practice",
+      "group": "SCHL"
+    },
+    {
+      "id": 73,
+      "label": "Classroom Interaction Phrases",
+      "group": "SCHL"
+    },
+    {
+      "id": 74,
+      "label": "Reading Comprehension Strategies",
+      "group": "SCHL"
+    },
+    {
+      "id": 75,
+      "label": "Listening Comprehension Strategies",
+      "group": "SCHL"
+    },
+    {
+      "id": 76,
+      "label": "Family Member Vocabulary",
+      "group": "FAM"
+    },
+    {
+      "id": 77,
+      "label": "Extended Family Vocabulary",
+      "group": "FAM"
+    },
+    {
+      "id": 78,
+      "label": "Describing Family Members",
+      "group": "FAM"
+    },
+    {
+      "id": 79,
+      "label": "Adjective Agreement Gender",
+      "group": "GRAM"
+    },
+    {
+      "id": 80,
+      "label": "Adjective Agreement Number",
+      "group": "GRAM"
+    },
+    {
+      "id": 81,
+      "label": "Descriptive Adjectives",
+      "group": "GRAM"
+    },
+    {
+      "id": 82,
+      "label": "Physical Description Vocabulary",
+      "group": "FAM"
+    },
+    {
+      "id": 83,
+      "label": "Personality Traits Vocabulary",
+      "group": "FAM"
+    },
+    {
+      "id": 84,
+      "label": "The Verb Estar",
+      "group": "VERB"
+    },
+    {
+      "id": 85,
+      "label": "Estar Conjugation Present",
+      "group": "VERB"
+    },
+    {
+      "id": 86,
+      "label": "Uses Of Estar",
+      "group": "VERB"
+    },
+    {
+      "id": 87,
+      "label": "Ser Vs Estar",
+      "group": "VERB"
+    },
+    {
+      "id": 88,
+      "label": "Expressing Location",
+      "group": "FAM"
+    },
+    {
+      "id": 89,
+      "label": "Home Vocabulary",
+      "group": "FAM"
+    },
+    {
+      "id": 90,
+      "label": "Where Family Lives",
+      "group": "FAM"
+    },
+    {
+      "id": 91,
+      "label": "Present Tense -Er Verbs",
+      "group": "VERB"
+    },
+    {
+      "id": 92,
+      "label": "Present Tense -Ir Verbs",
+      "group": "VERB"
+    },
+    {
+      "id": 93,
+      "label": "Regular -Er Verb Endings",
+      "group": "VERB"
+    },
+    {
+      "id": 94,
+      "label": "Regular -Ir Verb Endings",
+      "group": "VERB"
+    },
+    {
+      "id": 95,
+      "label": "Common -Er And -Ir Verbs",
+      "group": "VERB"
+    },
+    {
+      "id": 96,
+      "label": "Weekend Plans Vocabulary",
+      "group": "FAM"
+    },
+    {
+      "id": 97,
+      "label": "Asking About Plans",
+      "group": "FAM"
+    },
+    {
+      "id": 98,
+      "label": "Digital Album Project",
+      "group": "FAM"
+    },
+    {
+      "id": 99,
+      "label": "Presenting Family Information",
+      "group": "FAM"
+    },
+    {
+      "id": 100,
+      "label": "Spain Family Life",
+      "group": "CULT"
+    },
+    {
+      "id": 101,
+      "label": "Colorado Community",
+      "group": "CULT"
+    },
+    {
+      "id": 102,
+      "label": "Comparing Family Structures",
+      "group": "CULT"
+    },
+    {
+      "id": 103,
+      "label": "Role Of Family In Identity",
+      "group": "CULT"
+    },
+    {
+      "id": 104,
+      "label": "Where We Live Vocabulary",
+      "group": "FAM"
+    },
+    {
+      "id": 105,
+      "label": "Home And Belonging",
+      "group": "FAM"
+    },
+    {
+      "id": 106,
+      "label": "Food Vocabulary",
+      "group": "FOOD"
+    },
+    {
+      "id": 107,
+      "label": "Meal Time Vocabulary",
+      "group": "FOOD"
+    },
+    {
+      "id": 108,
+      "label": "Healthy Eating Vocabulary",
+      "group": "FOOD"
+    },
+    {
+      "id": 109,
+      "label": "Market Vocabulary",
+      "group": "FOOD"
+    },
+    {
+      "id": 110,
+      "label": "Shopping Expressions",
+      "group": "FOOD"
+    },
+    {
+      "id": 111,
+      "label": "Stem-Changing Verbs E To Ie",
+      "group": "VERB"
+    },
+    {
+      "id": 112,
+      "label": "Common Stem-Changing Verbs",
+      "group": "VERB"
+    },
+    {
+      "id": 113,
+      "label": "Making Requests",
+      "group": "FOOD"
+    },
+    {
+      "id": 114,
+      "label": "Making Recommendations",
+      "group": "FOOD"
+    },
+    {
+      "id": 115,
+      "label": "The Verb Querer",
+      "group": "VERB"
+    },
+    {
+      "id": 116,
+      "label": "The Verb Preferir",
+      "group": "VERB"
+    },
+    {
+      "id": 117,
+      "label": "The Verb Encantar",
+      "group": "VERB"
+    },
+    {
+      "id": 118,
+      "label": "Gustar Vs Encantar",
+      "group": "VERB"
+    },
+    {
+      "id": 119,
+      "label": "Expressing Food Preferences",
+      "group": "FOOD"
+    },
+    {
+      "id": 120,
+      "label": "Expressing Habits",
+      "group": "FOOD"
+    },
+    {
+      "id": 121,
+      "label": "Demonstrative Adjectives",
+      "group": "GRAM"
+    },
+    {
+      "id": 122,
+      "label": "Este Ese Aquel",
+      "group": "GRAM"
+    },
+    {
+      "id": 123,
+      "label": "Referring To Specific Items",
+      "group": "GRAM"
+    },
+    {
+      "id": 124,
+      "label": "Menu Vocabulary",
+      "group": "FOOD"
+    },
+    {
+      "id": 125,
+      "label": "Creating A Menu",
+      "group": "FOOD"
+    },
+    {
+      "id": 126,
+      "label": "Presenting Food Preferences",
+      "group": "FOOD"
+    },
+    {
+      "id": 127,
+      "label": "Mexico Food Traditions",
+      "group": "CULT"
+    },
+    {
+      "id": 128,
+      "label": "North Carolina Community",
+      "group": "CULT"
+    },
+    {
+      "id": 129,
+      "label": "Geography And Food Traditions",
+      "group": "CULT"
+    },
+    {
+      "id": 130,
+      "label": "Comparing Food Cultures",
+      "group": "CULT"
+    },
+    {
+      "id": 131,
+      "label": "Intercultural Understanding",
+      "group": "CULT"
+    },
+    {
+      "id": 132,
+      "label": "Sharing Food Traditions",
+      "group": "CULT"
+    },
+    {
+      "id": 133,
+      "label": "Market Shopping Dialogue",
+      "group": "FOOD"
+    },
+    {
+      "id": 134,
+      "label": "Ordering Food Phrases",
+      "group": "FOOD"
+    },
+    {
+      "id": 135,
+      "label": "Food Culture Reflection",
+      "group": "FOOD"
+    },
+    {
+      "id": 136,
+      "label": "ACTFL Proficiency Levels",
+      "group": "ACTFL",
+      "shape": "box"
+    },
+    {
+      "id": 137,
+      "label": "Novice Level Proficiency",
+      "group": "ACTFL"
+    },
+    {
+      "id": 138,
+      "label": "Interpretive Communication",
+      "group": "ACTFL"
+    },
+    {
+      "id": 139,
+      "label": "Interpersonal Communication",
+      "group": "ACTFL"
+    },
+    {
+      "id": 140,
+      "label": "Presentational Communication",
+      "group": "ACTFL"
+    },
+    {
+      "id": 141,
+      "label": "ACTFL Communication Standard",
+      "group": "ACTFL"
+    },
+    {
+      "id": 142,
+      "label": "ACTFL Comparisons Standard",
+      "group": "ACTFL"
+    },
+    {
+      "id": 143,
+      "label": "ACTFL Cultures Standard",
+      "group": "ACTFL"
+    },
+    {
+      "id": 144,
+      "label": "Cultural Products",
+      "group": "ACTFL"
+    },
+    {
+      "id": 145,
+      "label": "Cultural Practices",
+      "group": "ACTFL"
+    },
+    {
+      "id": 146,
+      "label": "Cultural Perspectives",
+      "group": "ACTFL"
+    },
+    {
+      "id": 147,
+      "label": "Comparing Language Structures",
+      "group": "ACTFL"
+    },
+    {
+      "id": 148,
+      "label": "Language Register",
+      "group": "GRAM"
+    },
+    {
+      "id": 149,
+      "label": "Nonverbal Communication",
+      "group": "ACTFL"
+    },
+    {
+      "id": 150,
+      "label": "Intercultural Competence",
+      "group": "ACTFL"
+    },
+    {
+      "id": 151,
+      "label": "Communicating Respectfully",
+      "group": "ACTFL"
+    },
+    {
+      "id": 152,
+      "label": "Negotiating Meaning",
+      "group": "ACTFL"
+    },
+    {
+      "id": 153,
+      "label": "Circumlocution Strategies",
+      "group": "ACTFL"
+    },
+    {
+      "id": 154,
+      "label": "Self-Assessment Of Proficiency",
+      "group": "ACTFL"
+    },
+    {
+      "id": 155,
+      "label": "Can-Do Statements",
+      "group": "ACTFL"
+    },
+    {
+      "id": 156,
+      "label": "Vocabulary Flashcard Practice",
+      "group": "PRAC"
+    },
+    {
+      "id": 157,
+      "label": "Grammar Drill Practice",
+      "group": "PRAC"
+    },
+    {
+      "id": 158,
+      "label": "Listening Practice Activities",
+      "group": "PRAC"
+    },
+    {
+      "id": 159,
+      "label": "Speaking Practice Activities",
+      "group": "PRAC"
+    },
+    {
+      "id": 160,
+      "label": "Reading Practice Activities",
+      "group": "PRAC"
+    },
+    {
+      "id": 161,
+      "label": "Writing Practice Activities",
+      "group": "PRAC"
+    },
+    {
+      "id": 162,
+      "label": "Formative Assessment",
+      "group": "ASMT"
+    },
+    {
+      "id": 163,
+      "label": "Summative Assessment",
+      "group": "ASMT"
+    },
+    {
+      "id": 164,
+      "label": "Performance Assessment",
+      "group": "ASMT"
+    },
+    {
+      "id": 165,
+      "label": "Peer Conversation Practice",
+      "group": "PRAC"
+    },
+    {
+      "id": 166,
+      "label": "Oral Presentation Skills",
+      "group": "PRAC"
+    },
+    {
+      "id": 167,
+      "label": "Written Composition Skills",
+      "group": "PRAC"
+    },
+    {
+      "id": 168,
+      "label": "Self-Introduction Presentation",
+      "group": "ASMT"
+    },
+    {
+      "id": 169,
+      "label": "Family Album Presentation",
+      "group": "ASMT"
+    },
+    {
+      "id": 170,
+      "label": "Menu Presentation Project",
+      "group": "ASMT"
+    },
+    {
+      "id": 171,
+      "label": "Canvas Learning Platform",
+      "group": "PRAC",
+      "shape": "box"
+    },
+    {
+      "id": 172,
+      "label": "Online Practice Tools",
+      "group": "PRAC"
+    },
+    {
+      "id": 173,
+      "label": "Vocabulary Quiz Strategies",
+      "group": "PRAC"
+    },
+    {
+      "id": 174,
+      "label": "Grammar Quiz Strategies",
+      "group": "PRAC"
+    },
+    {
+      "id": 175,
+      "label": "Peer Feedback Practice",
+      "group": "PRAC"
+    },
+    {
+      "id": 176,
+      "label": "Error Correction Strategies",
+      "group": "PRAC"
+    },
+    {
+      "id": 177,
+      "label": "Using A Bilingual Dictionary",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 178,
+      "label": "Context Clues For Vocabulary",
+      "group": "FOUND"
+    },
+    {
+      "id": 179,
+      "label": "Cognate Recognition Strategy",
+      "group": "FOUND"
+    },
+    {
+      "id": 180,
+      "label": "Pronunciation Practice",
+      "group": "FOUND"
+    },
+    {
+      "id": 181,
+      "label": "Minnesota Community Connections",
+      "group": "CULT"
+    },
+    {
+      "id": 182,
+      "label": "Home Vs Target Culture",
+      "group": "CULT"
+    },
+    {
+      "id": 183,
+      "label": "Spanish Speaking World Overview",
+      "group": "CULT",
+      "shape": "box"
+    },
+    {
+      "id": 184,
+      "label": "Diversity In Spanish Dialects",
+      "group": "CULT"
+    },
+    {
+      "id": 185,
+      "label": "Regional Vocabulary Variation",
+      "group": "CULT"
+    },
+    {
+      "id": 186,
+      "label": "Formal Commands Preview",
+      "group": "GRAM"
+    },
+    {
+      "id": 187,
+      "label": "Reflexive Verbs Preview",
+      "group": "GRAM"
+    },
+    {
+      "id": 188,
+      "label": "Preterite Tense Preview",
+      "group": "GRAM"
+    },
+    {
+      "id": 189,
+      "label": "Building Vocabulary Networks",
+      "group": "PRAC"
+    },
+    {
+      "id": 190,
+      "label": "Word Families In Spanish",
+      "group": "PRAC"
+    },
+    {
+      "id": 191,
+      "label": "Sentence Structure Basics",
+      "group": "GRAM"
+    },
+    {
+      "id": 192,
+      "label": "Subject Verb Agreement",
+      "group": "GRAM"
+    },
+    {
+      "id": 193,
+      "label": "Negation In Spanish",
+      "group": "GRAM"
+    },
+    {
+      "id": 194,
+      "label": "Basic Conjunctions",
+      "group": "GRAM"
+    },
+    {
+      "id": 195,
+      "label": "Basic Prepositions",
+      "group": "GRAM"
+    },
+    {
+      "id": 196,
+      "label": "Question Intonation",
+      "group": "FOUND"
+    },
+    {
+      "id": 197,
+      "label": "Cultural Immersion Activities",
+      "group": "PRAC"
+    },
+    {
+      "id": 198,
+      "label": "Authentic Text Interpretation",
+      "group": "PRAC"
+    },
+    {
+      "id": 199,
+      "label": "Video-Based Learning Strategies",
+      "group": "PRAC"
+    },
+    {
+      "id": 200,
+      "label": "End-of-Year Reflection",
+      "group": "ACTFL"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 4,
+      "to": 3
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 14,
+      "to": 10
+    },
+    {
+      "from": 14,
+      "to": 12
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 18,
+      "to": 1
+    },
+    {
+      "from": 19,
+      "to": 7
+    },
+    {
+      "from": 20,
+      "to": 7
+    },
+    {
+      "from": 21,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 20
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 22,
+      "to": 15
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 24,
+      "to": 19
+    },
+    {
+      "from": 24,
+      "to": 20
+    },
+    {
+      "from": 25,
+      "to": 22
+    },
+    {
+      "from": 26,
+      "to": 22
+    },
+    {
+      "from": 27,
+      "to": 26
+    },
+    {
+      "from": 27,
+      "to": 18
+    },
+    {
+      "from": 28,
+      "to": 10
+    },
+    {
+      "from": 28,
+      "to": 26
+    },
+    {
+      "from": 29,
+      "to": 15
+    },
+    {
+      "from": 29,
+      "to": 16
+    },
+    {
+      "from": 30,
+      "to": 29
+    },
+    {
+      "from": 31,
+      "to": 30
+    },
+    {
+      "from": 32,
+      "to": 26
+    },
+    {
+      "from": 33,
+      "to": 32
+    },
+    {
+      "from": 34,
+      "to": 15
+    },
+    {
+      "from": 35,
+      "to": 34
+    },
+    {
+      "from": 36,
+      "to": 35
+    },
+    {
+      "from": 36,
+      "to": 33
+    },
+    {
+      "from": 37,
+      "to": 35
+    },
+    {
+      "from": 37,
+      "to": 33
+    },
+    {
+      "from": 38,
+      "to": 34
+    },
+    {
+      "from": 39,
+      "to": 38
+    },
+    {
+      "from": 40,
+      "to": 38
+    },
+    {
+      "from": 41,
+      "to": 21
+    },
+    {
+      "from": 42,
+      "to": 19
+    },
+    {
+      "from": 42,
+      "to": 20
+    },
+    {
+      "from": 43,
+      "to": 42
+    },
+    {
+      "from": 44,
+      "to": 42
+    },
+    {
+      "from": 45,
+      "to": 43
+    },
+    {
+      "from": 45,
+      "to": 44
+    },
+    {
+      "from": 46,
+      "to": 16
+    },
+    {
+      "from": 46,
+      "to": 17
+    },
+    {
+      "from": 47,
+      "to": 16
+    },
+    {
+      "from": 47,
+      "to": 17
+    },
+    {
+      "from": 48,
+      "to": 46
+    },
+    {
+      "from": 48,
+      "to": 14
+    },
+    {
+      "from": 49,
+      "to": 14
+    },
+    {
+      "from": 50,
+      "to": 16
+    },
+    {
+      "from": 50,
+      "to": 17
+    },
+    {
+      "from": 51,
+      "to": 16
+    },
+    {
+      "from": 51,
+      "to": 17
+    },
+    {
+      "from": 52,
+      "to": 50
+    },
+    {
+      "from": 53,
+      "to": 51
+    },
+    {
+      "from": 54,
+      "to": 15
+    },
+    {
+      "from": 55,
+      "to": 54
+    },
+    {
+      "from": 56,
+      "to": 55
+    },
+    {
+      "from": 57,
+      "to": 56
+    },
+    {
+      "from": 57,
+      "to": 33
+    },
+    {
+      "from": 58,
+      "to": 14
+    },
+    {
+      "from": 59,
+      "to": 58
+    },
+    {
+      "from": 60,
+      "to": 12
+    },
+    {
+      "from": 60,
+      "to": 48
+    },
+    {
+      "from": 61,
+      "to": 49
+    },
+    {
+      "from": 61,
+      "to": 56
+    },
+    {
+      "from": 61,
+      "to": 58
+    },
+    {
+      "from": 62,
+      "to": 46
+    },
+    {
+      "from": 63,
+      "to": 8
+    },
+    {
+      "from": 64,
+      "to": 48
+    },
+    {
+      "from": 64,
+      "to": 58
+    },
+    {
+      "from": 65,
+      "to": 62
+    },
+    {
+      "from": 66,
+      "to": 62
+    },
+    {
+      "from": 67,
+      "to": 65
+    },
+    {
+      "from": 67,
+      "to": 66
+    },
+    {
+      "from": 68,
+      "to": 67
+    },
+    {
+      "from": 69,
+      "to": 48
+    },
+    {
+      "from": 69,
+      "to": 61
+    },
+    {
+      "from": 70,
+      "to": 48
+    },
+    {
+      "from": 70,
+      "to": 9
+    },
+    {
+      "from": 71,
+      "to": 61
+    },
+    {
+      "from": 72,
+      "to": 9
+    },
+    {
+      "from": 73,
+      "to": 7
+    },
+    {
+      "from": 74,
+      "to": 63
+    },
+    {
+      "from": 75,
+      "to": 63
+    },
+    {
+      "from": 76,
+      "to": 16
+    },
+    {
+      "from": 76,
+      "to": 17
+    },
+    {
+      "from": 77,
+      "to": 76
+    },
+    {
+      "from": 78,
+      "to": 76
+    },
+    {
+      "from": 78,
+      "to": 29
+    },
+    {
+      "from": 79,
+      "to": 16
+    },
+    {
+      "from": 80,
+      "to": 17
+    },
+    {
+      "from": 80,
+      "to": 79
+    },
+    {
+      "from": 81,
+      "to": 79
+    },
+    {
+      "from": 81,
+      "to": 80
+    },
+    {
+      "from": 82,
+      "to": 81
+    },
+    {
+      "from": 83,
+      "to": 81
+    },
+    {
+      "from": 84,
+      "to": 15
+    },
+    {
+      "from": 84,
+      "to": 16
+    },
+    {
+      "from": 85,
+      "to": 84
+    },
+    {
+      "from": 86,
+      "to": 85
+    },
+    {
+      "from": 87,
+      "to": 31
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 86
+    },
+    {
+      "from": 89,
+      "to": 16
+    },
+    {
+      "from": 89,
+      "to": 17
+    },
+    {
+      "from": 90,
+      "to": 89
+    },
+    {
+      "from": 90,
+      "to": 88
+    },
+    {
+      "from": 91,
+      "to": 15
+    },
+    {
+      "from": 92,
+      "to": 15
+    },
+    {
+      "from": 93,
+      "to": 91
+    },
+    {
+      "from": 94,
+      "to": 92
+    },
+    {
+      "from": 95,
+      "to": 93
+    },
+    {
+      "from": 95,
+      "to": 94
+    },
+    {
+      "from": 96,
+      "to": 95
+    },
+    {
+      "from": 96,
+      "to": 33
+    },
+    {
+      "from": 97,
+      "to": 96
+    },
+    {
+      "from": 97,
+      "to": 9
+    },
+    {
+      "from": 98,
+      "to": 78
+    },
+    {
+      "from": 98,
+      "to": 90
+    },
+    {
+      "from": 99,
+      "to": 78
+    },
+    {
+      "from": 99,
+      "to": 98
+    },
+    {
+      "from": 100,
+      "to": 78
+    },
+    {
+      "from": 101,
+      "to": 78
+    },
+    {
+      "from": 102,
+      "to": 100
+    },
+    {
+      "from": 102,
+      "to": 101
+    },
+    {
+      "from": 103,
+      "to": 102
+    },
+    {
+      "from": 104,
+      "to": 90
+    },
+    {
+      "from": 105,
+      "to": 104
+    },
+    {
+      "from": 105,
+      "to": 103
+    },
+    {
+      "from": 106,
+      "to": 16
+    },
+    {
+      "from": 106,
+      "to": 17
+    },
+    {
+      "from": 107,
+      "to": 106
+    },
+    {
+      "from": 107,
+      "to": 14
+    },
+    {
+      "from": 108,
+      "to": 106
+    },
+    {
+      "from": 109,
+      "to": 106
+    },
+    {
+      "from": 110,
+      "to": 109
+    },
+    {
+      "from": 111,
+      "to": 54
+    },
+    {
+      "from": 111,
+      "to": 91
+    },
+    {
+      "from": 111,
+      "to": 92
+    },
+    {
+      "from": 112,
+      "to": 111
+    },
+    {
+      "from": 113,
+      "to": 112
+    },
+    {
+      "from": 114,
+      "to": 112
+    },
+    {
+      "from": 115,
+      "to": 111
+    },
+    {
+      "from": 116,
+      "to": 111
+    },
+    {
+      "from": 117,
+      "to": 34
+    },
+    {
+      "from": 118,
+      "to": 35
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 118
+    },
+    {
+      "from": 119,
+      "to": 106
+    },
+    {
+      "from": 120,
+      "to": 59
+    },
+    {
+      "from": 120,
+      "to": 56
+    },
+    {
+      "from": 121,
+      "to": 79
+    },
+    {
+      "from": 121,
+      "to": 80
+    },
+    {
+      "from": 122,
+      "to": 121
+    },
+    {
+      "from": 123,
+      "to": 122
+    },
+    {
+      "from": 124,
+      "to": 106
+    },
+    {
+      "from": 124,
+      "to": 107
+    },
+    {
+      "from": 125,
+      "to": 124
+    },
+    {
+      "from": 125,
+      "to": 119
+    },
+    {
+      "from": 126,
+      "to": 119
+    },
+    {
+      "from": 126,
+      "to": 125
+    },
+    {
+      "from": 127,
+      "to": 106
+    },
+    {
+      "from": 128,
+      "to": 127
+    },
+    {
+      "from": 129,
+      "to": 127
+    },
+    {
+      "from": 129,
+      "to": 128
+    },
+    {
+      "from": 130,
+      "to": 129
+    },
+    {
+      "from": 131,
+      "to": 45
+    },
+    {
+      "from": 131,
+      "to": 68
+    },
+    {
+      "from": 131,
+      "to": 102
+    },
+    {
+      "from": 131,
+      "to": 130
+    },
+    {
+      "from": 132,
+      "to": 130
+    },
+    {
+      "from": 133,
+      "to": 110
+    },
+    {
+      "from": 133,
+      "to": 113
+    },
+    {
+      "from": 134,
+      "to": 110
+    },
+    {
+      "from": 134,
+      "to": 107
+    },
+    {
+      "from": 135,
+      "to": 132
+    },
+    {
+      "from": 137,
+      "to": 136
+    },
+    {
+      "from": 138,
+      "to": 136
+    },
+    {
+      "from": 139,
+      "to": 136
+    },
+    {
+      "from": 140,
+      "to": 136
+    },
+    {
+      "from": 141,
+      "to": 138
+    },
+    {
+      "from": 141,
+      "to": 139
+    },
+    {
+      "from": 141,
+      "to": 140
+    },
+    {
+      "from": 142,
+      "to": 136
+    },
+    {
+      "from": 143,
+      "to": 136
+    },
+    {
+      "from": 144,
+      "to": 143
+    },
+    {
+      "from": 145,
+      "to": 143
+    },
+    {
+      "from": 146,
+      "to": 144
+    },
+    {
+      "from": 146,
+      "to": 145
+    },
+    {
+      "from": 147,
+      "to": 142
+    },
+    {
+      "from": 148,
+      "to": 21
+    },
+    {
+      "from": 149,
+      "to": 139
+    },
+    {
+      "from": 150,
+      "to": 146
+    },
+    {
+      "from": 150,
+      "to": 131
+    },
+    {
+      "from": 151,
+      "to": 41
+    },
+    {
+      "from": 151,
+      "to": 148
+    },
+    {
+      "from": 152,
+      "to": 139
+    },
+    {
+      "from": 153,
+      "to": 152
+    },
+    {
+      "from": 154,
+      "to": 137
+    },
+    {
+      "from": 155,
+      "to": 137
+    },
+    {
+      "from": 156,
+      "to": 26
+    },
+    {
+      "from": 157,
+      "to": 54
+    },
+    {
+      "from": 158,
+      "to": 75
+    },
+    {
+      "from": 159,
+      "to": 22
+    },
+    {
+      "from": 160,
+      "to": 74
+    },
+    {
+      "from": 161,
+      "to": 22
+    },
+    {
+      "from": 162,
+      "to": 156
+    },
+    {
+      "from": 162,
+      "to": 157
+    },
+    {
+      "from": 163,
+      "to": 162
+    },
+    {
+      "from": 164,
+      "to": 163
+    },
+    {
+      "from": 165,
+      "to": 159
+    },
+    {
+      "from": 166,
+      "to": 159
+    },
+    {
+      "from": 167,
+      "to": 161
+    },
+    {
+      "from": 168,
+      "to": 166
+    },
+    {
+      "from": 168,
+      "to": 22
+    },
+    {
+      "from": 169,
+      "to": 98
+    },
+    {
+      "from": 169,
+      "to": 166
+    },
+    {
+      "from": 170,
+      "to": 125
+    },
+    {
+      "from": 170,
+      "to": 166
+    },
+    {
+      "from": 172,
+      "to": 171
+    },
+    {
+      "from": 172,
+      "to": 156
+    },
+    {
+      "from": 173,
+      "to": 156
+    },
+    {
+      "from": 174,
+      "to": 157
+    },
+    {
+      "from": 175,
+      "to": 165
+    },
+    {
+      "from": 176,
+      "to": 175
+    },
+    {
+      "from": 178,
+      "to": 177
+    },
+    {
+      "from": 178,
+      "to": 26
+    },
+    {
+      "from": 179,
+      "to": 5
+    },
+    {
+      "from": 179,
+      "to": 6
+    },
+    {
+      "from": 180,
+      "to": 2
+    },
+    {
+      "from": 180,
+      "to": 3
+    },
+    {
+      "from": 181,
+      "to": 44
+    },
+    {
+      "from": 181,
+      "to": 101
+    },
+    {
+      "from": 182,
+      "to": 130
+    },
+    {
+      "from": 184,
+      "to": 183
+    },
+    {
+      "from": 185,
+      "to": 184
+    },
+    {
+      "from": 185,
+      "to": 106
+    },
+    {
+      "from": 186,
+      "to": 21
+    },
+    {
+      "from": 187,
+      "to": 95
+    },
+    {
+      "from": 188,
+      "to": 54
+    },
+    {
+      "from": 188,
+      "to": 91
+    },
+    {
+      "from": 188,
+      "to": 92
+    },
+    {
+      "from": 189,
+      "to": 26
+    },
+    {
+      "from": 189,
+      "to": 106
+    },
+    {
+      "from": 190,
+      "to": 189
+    },
+    {
+      "from": 191,
+      "to": 15
+    },
+    {
+      "from": 191,
+      "to": 54
+    },
+    {
+      "from": 192,
+      "to": 191
+    },
+    {
+      "from": 193,
+      "to": 192
+    },
+    {
+      "from": 194,
+      "to": 191
+    },
+    {
+      "from": 195,
+      "to": 191
+    },
+    {
+      "from": 196,
+      "to": 9
+    },
+    {
+      "from": 196,
+      "to": 180
+    },
+    {
+      "from": 197,
+      "to": 150
+    },
+    {
+      "from": 198,
+      "to": 74
+    },
+    {
+      "from": 198,
+      "to": 75
+    },
+    {
+      "from": 198,
+      "to": 179
+    },
+    {
+      "from": 199,
+      "to": 63
+    },
+    {
+      "from": 200,
+      "to": 154
+    },
+    {
+      "from": 200,
+      "to": 197
+    }
+  ]
+}
